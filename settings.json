@@ -1,0 +1,1 @@
+{"inputfile": "data.xlsx", "sqlserver": "sql-svr\\mssqlr2", "database": "wmis_dev", "params_table": "TMiscParams", "data_table": "TMiscData", "stored_proc": "sp_TMiscTransactions"}

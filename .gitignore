@@ -1,0 +1,7 @@
+dist
+output
+venv
+.idea
+data.xlsx
+*/__pycache__
+*.exe
