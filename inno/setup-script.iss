@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MiscISMP"
-#define MyAppVersion "1.2"
+#define MyAppVersion "1.3"
 #define MyAppPublisher "WWD"
 #define MyAppExeName "main.exe"
 
@@ -31,9 +31,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "E:\projects\py\miscismp\dist\main.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "E:\projects\py\miscismp\dist\data.xlsx"; DestDir: "{app}"; Flags: ignoreversion
-Source: "E:\projects\py\miscismp\dist\settings.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "E:\projects\py\miscismp\inno\main.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "E:\projects\py\miscismp\execstoredproc\*"; DestDir: "{app}\source\execstoredproc\"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "E:\projects\py\miscismp\getpostresults\*"; DestDir: "{app}\source\getpostresults"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "E:\projects\py\miscismp\loadexceldata\*"; DestDir: "{app}\source\loadexceldata"; Flags: ignoreversion recursesubdirs createallsubdirs
