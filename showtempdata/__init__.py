@@ -1,6 +1,7 @@
 from settings import Settings
 import pyodbc
 
+
 class ShowTempData:
 
     def __init__(self) -> None:

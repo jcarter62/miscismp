@@ -25,7 +25,13 @@ class Settings:
         super().__init__()
 
     def config_filename(self) -> str:
-        _data_folder = os.path.join(os.getenv('APPDATA'), 'miscismp')
+        appname = 'miscismp'
+        osname = os.name
+        if osname == 'win':
+            _data_folder = os.path.join(os.getenv('APPDATA'), appname)
+        else:
+            _data_folder = os.path.join(os.getenv('HOME'), '.' + appname )
+
         if not os.path.exists(_data_folder):
             os.makedirs(_data_folder)
 
@@ -36,7 +42,7 @@ class Settings:
         result = {
             "inputfile": "data.xlsx",
             "sqlserver": "sql-svr\\mssqlr2",
-            "database": "wmis_dev",
+            "database": "wmis_ibm",
             "params_table": "TMiscParams",
             "data_table": "TMiscData",
             "stored_proc": "sp_TMiscTransactions"
